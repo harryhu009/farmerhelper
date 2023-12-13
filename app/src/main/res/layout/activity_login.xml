@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/title_signup"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:accessibilityHeading="false"
+        android:background="@color/c_title"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/t_login"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_username"
+            android:layout_marginTop="20dp"
+            android:text="@string/t_username"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/input_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_border_background"
+            android:ems="10"
+            android:hint="@string/t_username"
+            android:importantForAutofill="no"
+            android:inputType="textFilter"
+            android:minHeight="50dp" />
+
+        <TextView
+            android:id="@+id/title_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/t_password"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/input_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_border_background"
+            android:ems="10"
+            android:hint="@string/t_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/t_login"
+            android:textSize="20sp"
+            app:cornerRadius="0dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

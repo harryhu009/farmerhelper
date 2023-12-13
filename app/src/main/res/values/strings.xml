@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FarmerHelper</string>
+    <string name="t_login">Login</string>
+    <string name="t_sign_up">Sign Up</string>
+    <string name="t_username">Username</string>
+    <string name="t_password">Password</string>
+    <string name="t_email_optional">Email (optional)</string>
+    <string name="t_email">Email</string>
+    <string name="t_firstname">First Name</string>
+    <string name="t_familyname">Last Name</string>
+    <string name="t_cancel">Cancel</string>
+    <string name="t_submit">Submit</string>
+    <string name="t_input">Input</string>
+    <string name="t_congratulations">Congratulations!</string>
+    <string name="t_preview">Preview</string>
+    <string name="t_back_to_home_page">Back to home page</string>
+    <string name="t_your_product">Your product</string>
+    <string name="t_published2">has been successfully published!</string>
+    <string name="t_add_product">Add Product</string>
+    <string name="plus_sign">+</string>
+    <string name="ph_product_name">Enter your product name</string>
+    <string name="t_platform1">P 1</string>
+    <string name="t_platform2">P 2</string>
+    <string name="t_platform3">P 3</string>
+    <string name="t_platform">Platforms</string>
+    <string name="t_price">General Price / Unit</string>
+    <string name="t_stock">Current Stock</string>
+    <string name="t_product_description">Product Description</string>
+    <string name="t_add_image">Add Product Image</string>
+    <string name="ph_price">Enter price: $</string>
+    <string name="ph_prod_description">Enter product description</string>
+    <string name="ph_stock">Enter your stock</string>
+    <string name="t_product_name">Product Name</string>
+    <string name="t_confirm">Confirm</string>
+    <string name="t_global_user">global_user_pref</string>
+</resources>

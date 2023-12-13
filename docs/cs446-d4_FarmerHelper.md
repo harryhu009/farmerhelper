@@ -1,0 +1,26 @@
+## Project title: FarmerHelper
+# Architecture Style Examples
+| First Name | Last Name | Quest ID | Github ID  |
+|------------|-----------|----------|------------|
+| Dingjie    | Hu        | d36hu    | harryhu009 |
+| Kevin      | Dong      | k27dong  | k27dong    |
+| Shurui     | Cui       | s32cui   | Kenonder   |
+| Yiru       | Wu        | y645wu   | yiruW      |
+| Yuwei      | Xi        | y29xi    | YUWEIXI    |
+| Zihan      | Liu       | z594liu  | ZihanL     |
+----
+1. Layered style:  
+  
+The layered architectural style is composed of horizontal layers composed of modules and components with similar functions, and each horizontal layer performs a specific role in the app. The basic elements of the architecture are protocols, interfaces, and services. The interface is an important channel for information exchange. The protocol defines the rules that the horizontal layer uses to exchange information with the target object. Services represent operations that a horizontal layer provides to higher-level layers.  
+According to the figure below, we take the fast-food restaurant ordering system as an example to introduce the layered architecture. There are four horizontal layers shown in the Figure. Firstly, the presentation layer will show the menu to customers. Then, the business layer shows the info for the cashier such as food processing time, amount of food left, and food price. Meanwhile, the business layer will provide the corresponding information to the presentation layer to display the info and the food production layer so that the cook can know the chefs know the customers’ needs.      
+
+2.Client-server    
+The client-server architecture comprises two types of components: servers and clients. The servers are stand-alone components that provide specific services, and the clients are components that call on services provided by servers. Various clients can talk to one or more servers to request their service, but they are not allowed to speak to other clients directly. The client-server architecture will enable data to be transparently distributed on multiple servers and mixes heterogeneous platforms of clients and servers. Also, servers are easy to upgrade and maintain under this architecture.   
+The post office letter/package collection and delivery system is a real-life example. While the connector could be the post office, clients (Client A) who want to send a letter or package can go to the post office to ask for delivery service, and the receiver (Client B) can check the package's current location through the system at the post office. The post office system provides many services, such as receiving and delivering packages, package location checking, delivery fee calculation, etc. This architecture is beneficial for the system since the services' through post offices could serve many clients in their neighborhood, and multiple services could use the same data information. For example, the receiver's address could not only be used in the delivery process but also in calculating the delivery fee. It is also easy to update or add more services. The client-server architecture is low-coupling for post office systems since each service in the post office can be considered an independent server. If one of the services is unavailable, it does not affect other working services, and clients could also choose to go to another post office to receive services. At the same time, clients and clients are independent of each other, so the coupling of the whole system is very low. Regarding the future change, as mentioned, it is easy for the post office to add additional services. One example would be the international express services.   
+Post office system model:  
+![IMG_0032](https://user-images.githubusercontent.com/43528898/179789152-dbc8adff-5142-4c35-9cf3-b12459e1f7cb.jpg)
+
+3.Microservice Architecture    
+The microservice architecture intends to split a large, automated monolithic software into multiple individual single-function modules which would provide flexibility for scaling and iterations. This method would reduce coupling since each module is separate from the others, and instead of rewriting a whole layer, any change in the system could be resolved by introducing new microservices or changing only a small portion of the code.  
+A real-world non-software example of microservice architecture would be the design of commercial areas in urban planning. A monolithic software is similar to a shopping mall: it consists of a certain number of shops of every kind, such as apparel, jewelry, electronics, pharmacies, and restaurants. Any customer could come into the mall, buy anything he/she needs, then exit the mall. This works in most cases but it also has some flaws: since all stores are located near each other, if one store needs to close for renovation for a few days, other stores close to it would also be affected. In worse situations, if one store is on fire, the entire mall needs to be evacuated for safety. Moreover, sometimes a customer might only want to buy one specific type of product, but he/she needs to go through the entire mall looking for them. Unfortunately, since the mall can only support a certain number of stores and the building design is finalized, these problems cannot be solved entirely.
+
