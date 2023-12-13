@@ -1,2 +1,2 @@
-# farmerhelper
-help farmer to sell their goods via web
+# FarmerHelper
+FarmerHelper for CS 446/ECE 452
